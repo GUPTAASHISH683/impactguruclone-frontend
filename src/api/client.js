@@ -1,6 +1,10 @@
-// src/api/client.js - Thin fetch wrapper for the backend API
+// src/api/client.js – Thin fetch wrapper for the backend API
+// In dev: Vite proxy forwards /api → localhost:4000
+// In production (Vercel): VITE_API_URL must point to the Railway backend
 
-const BASE_URL = '/api'
+const BASE_URL = import.meta.env.VITE_API_URL
+  ? `${import.meta.env.VITE_API_URL}/api`
+  : '/api'
 
 async function apiFetch(path, options = {}) {
   const res = await fetch(`${BASE_URL}${path}`, {
