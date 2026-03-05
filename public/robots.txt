@@ -1,0 +1,15 @@
+User-agent: *
+Allow: /
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+# Block irrelevant paths
+Disallow: /dist/
+Disallow: /*.json$
+Allow: /manifest.webmanifest
+
+Sitemap: https://www.impactguru.com/sitemap.xml
