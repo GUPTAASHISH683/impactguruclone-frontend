@@ -4,10 +4,10 @@ import { endpoints }            from '../api/client'
 import { useScrollReveal }      from '../hooks/useScrollReveal'
 
 const FALLBACK_FAQS = [
-  { id:1, question:'How do I start a fundraiser on ImpactGuru?',       answer:'Starting a fundraiser is free and takes under 10 minutes. Fill in your story, upload a photo, set your goal amount, and launch.' },
-  { id:2, question:'Is there a platform fee for medical crowdfunding?', answer:'ImpactGuru charges zero platform fee for medical campaigns. A small payment processing fee (2-3%) applies.' },
+  { id:1, question:'How do I start a fundraiser on FundDoo?',       answer:'Starting a fundraiser is free and takes under 10 minutes. Fill in your story, upload a photo, set your goal amount, and launch.' },
+  { id:2, question:'Is there a platform fee for medical crowdfunding?', answer:'FundDoo charges zero platform fee for medical campaigns. A small payment processing fee (2-3%) applies.' },
   { id:3, question:'How quickly will I receive the donated funds?',     answer:'Funds are transferred to your verified bank account within 5-7 working days.' },
-  { id:4, question:'Is donating on ImpactGuru safe and secure?',       answer:'Yes. We use 256-bit SSL encryption and partner with RBI-compliant payment gateways.' },
+  { id:4, question:'Is donating on FundDoo safe and secure?',       answer:'Yes. We use 256-bit SSL encryption and partner with RBI-compliant payment gateways.' },
 ]
 
 function AccordionItem({ faq, index, isOpen, onToggle }) {
@@ -30,7 +30,7 @@ function AccordionItem({ faq, index, isOpen, onToggle }) {
 
 export default function FAQ() {
   const [faqs,      setFaqs]      = useState(FALLBACK_FAQS)
-  const [section,   setSection]   = useState({ heading: 'Frequently Asked Questions', subheading: 'Everything you need to know about crowdfunding on ImpactGuru.', tag: 'Got Questions?' })
+  const [section,   setSection]   = useState({ heading: 'Frequently Asked Questions', subheading: 'Everything you need to know about crowdfunding on FundDoo. Together we save lives.', tag: 'Got Questions?' })
   const [openIndex, setOpenIndex] = useState(0)
   const ref = useScrollReveal()
 

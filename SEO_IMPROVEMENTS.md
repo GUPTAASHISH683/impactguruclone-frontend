@@ -22,7 +22,7 @@
 ### JSON-LD Structured Data (4 schemas in `<head>`)
 | Schema | Purpose |
 |--------|---------|
-| `Organization` | Tells Google who ImpactGuru is, logo, founding date, social links |
+| `Organization` | Tells Google who FundDoo is, logo, founding date, social links |
 | `WebSite` + `SearchAction` | Enables Sitelinks Search Box in Google results |
 | `FAQPage` | Gets expanded Q&A rich results in SERP (massive CTR boost) |
 | `BreadcrumbList` | Shows breadcrumb trail in search results |

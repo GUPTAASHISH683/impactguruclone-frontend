@@ -46,7 +46,7 @@
 
   /* Focus visible - critical for keyboard navigation & Lighthouse a11y */
   :focus-visible {
-    outline: 3px solid #FF5722;
+    outline: 3px solid #1B9B6C;
     outline-offset: 3px;
     border-radius: 4px;
   }

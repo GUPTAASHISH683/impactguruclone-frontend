@@ -125,7 +125,7 @@ export const CATEGORIES = [
 export const TESTIMONIALS = [
   {
     id: 1,
-    quote: 'ImpactGuru helped us raise ₹18 lakh for my son\'s kidney transplant in just 3 weeks. The support from strangers across India gave us hope we never thought was possible.',
+    quote: 'FundDoo helped us raise ₹18 lakh for my son\'s kidney transplant in just 3 weeks. The support from strangers across India gave us hope we never thought was possible.',
     name: 'Priya Sharma',
     location: 'Mumbai, Maharashtra',
     initials: 'PS',
@@ -141,7 +141,7 @@ export const TESTIMONIALS = [
   },
   {
     id: 3,
-    quote: 'After the floods in Assam, ImpactGuru\'s disaster relief campaign reached us within days. The platform truly connects hearts across the country instantly.',
+    quote: 'After the floods in Assam, FundDoo\'s disaster relief campaign reached us within days. The platform truly connects hearts across the country instantly.',
     name: 'Anjali Das',
     location: 'Guwahati, Assam',
     initials: 'AD',
@@ -149,7 +149,7 @@ export const TESTIMONIALS = [
   },
   {
     id: 4,
-    quote: 'As a regular donor, I love how transparent ImpactGuru is. I can see exactly where my money goes and receive real updates. I\'ve supported 12 campaigns this year!',
+    quote: 'As a regular donor, I love how transparent FundDoo is. I can see exactly where my money goes and receive real updates. I\'ve supported 12 campaigns this year!',
     name: 'Vikram Patel',
     location: 'Ahmedabad, Gujarat',
     initials: 'VP',

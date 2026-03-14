@@ -27,11 +27,11 @@ export default function CampaignCard({ campaign, delay = 0, headingLevel = 3 }) 
       'name': campaign.title,
       'description': campaign.desc,
     },
-    'url': `https://www.impactguru.com/campaigns/${campaign.id}`,
+    'url': `https://www.funddoo.com/campaigns/${campaign.id}`,
     'potentialAction': {
       '@type': 'DonateAction',
       'name': 'Donate Now',
-      'target': `https://www.impactguru.com/campaigns/${campaign.id}/donate`
+      'target': `https://www.funddoo.com/campaigns/${campaign.id}/donate`
     }
   }
 

@@ -12,7 +12,7 @@ const FALLBACK = {
       { label: 'Disaster Relief Fund',          href: '/campaigns/disaster' },
     ]},
     { heading: 'Company', links: [
-      { label: 'About ImpactGuru',       href: '/about' },
+      { label: 'About FundDoo',       href: '/about' },
       { label: 'How Crowdfunding Works', href: '/how-it-works' },
       { label: 'Platform Pricing',       href: '/pricing' },
     ]},
@@ -23,20 +23,20 @@ const FALLBACK = {
     ]},
   ],
   socials: [
-    { label: 'Facebook',  glyph: 'f',  href: 'https://facebook.com/ImpactGuru' },
-    { label: 'Twitter/X', glyph: '𝕏', href: 'https://twitter.com/ImpactGuru'  },
-    { label: 'Instagram', glyph: '▲', href: 'https://instagram.com/impactguru' },
-    { label: 'LinkedIn',  glyph: 'in', href: 'https://linkedin.com/company/impactguru' },
+    { label: 'Facebook',  glyph: 'f',  href: 'https://facebook.com/FundDoo' },
+    { label: 'Twitter/X', glyph: '𝕏', href: 'https://twitter.com/FundDoo'  },
+    { label: 'Instagram', glyph: '▲', href: 'https://instagram.com/funddoo' },
+    { label: 'LinkedIn',  glyph: 'in', href: 'https://linkedin.com/company/funddoo' },
   ],
   meta: {
-    company_name:    'ImpactGuru',
-    tagline:         "India's most trusted crowdfunding platform since 2014. Empowering millions through the power of giving.",
+    company_name:    'FundDoo',
+    tagline:         'Together we save lives.',
     address_street:  '1601, One BKC, Bandra Kurla Complex',
     address_city:    'Mumbai',
     address_state:   'Maharashtra',
     address_pin:     '400051',
     address_country: 'India',
-    copyright_text:  'ImpactGuru. All rights reserved.',
+    copyright_text:  'FundDoo. All rights reserved.',
     disclaimer:      'PayPal integration uses sandbox mode — demo only, no real transactions processed.',
     legal_link1_label: 'Privacy Policy',  legal_link1_href: '#',
     legal_link2_label: 'Terms of Service', legal_link2_href: '#',
@@ -47,6 +47,7 @@ const FALLBACK = {
 export default function Footer() {
   const [footer, setFooter] = useState(FALLBACK)
   const year = new Date().getFullYear()
+  const brandName = footer?.meta?.company_name || 'FundDoo'
 
   useEffect(() => {
     endpoints.footer()
@@ -57,16 +58,17 @@ export default function Footer() {
   const { columns, socials, meta } = footer
 
   return (
-    <footer className="bg-brand-dark pt-16 pb-0" role="contentinfo" aria-label="ImpactGuru site footer"
+    <footer className="bg-brand-dark pt-16 pb-0" role="contentinfo" aria-label="FundDoo - Together we save lives site footer"
       itemScope itemType="https://schema.org/WPFooter">
       <div className="max-w-7xl mx-auto px-6" itemScope itemType="https://schema.org/Organization">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-12 mb-12">
 
           {/* Brand + address */}
           <div>
-            <a href="/" className="font-display text-2xl font-black inline-block mb-4" aria-label="ImpactGuru home" itemProp="url">
-              <span className="text-white" itemProp="name">{meta.company_name?.replace('Guru','') || 'Impact'}</span>
-              <span className="text-brand-orange">Guru</span>
+            <a href="/" className="font-display text-2xl font-black inline-block mb-4" aria-label="FundDoo - Together we save lives home" itemProp="url">
+              <span className="text-white" aria-hidden="true">Fund</span>
+              <span className="text-brand-orange" aria-hidden="true">Doo</span>
+              <span className="sr-only" itemProp="name">{brandName}</span>
             </a>
             <p className="text-sm text-white/40 leading-relaxed mb-3 max-w-xs" itemProp="description">{meta.tagline}</p>
             <address className="text-sm text-white/30 not-italic mb-5 leading-relaxed" itemProp="address"

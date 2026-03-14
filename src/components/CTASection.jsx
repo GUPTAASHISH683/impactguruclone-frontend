@@ -6,7 +6,7 @@ import { useScrollReveal }     from '../hooks/useScrollReveal'
 export default function CTASection() {
   const [section, setSection] = useState({
     heading:    'Start Your Free Crowdfunding Campaign Today',
-    subheading: 'Join 5 lakh+ fundraisers who trust ImpactGuru. Zero platform fee for medical campaigns. Funds in your account within days.',
+    subheading: 'Join 5 lakh+ fundraisers who trust FundDoo. Together we save lives. Zero platform fee for medical campaigns. Funds in your account within days.',
     blocks: {
       benefit1:            '✅ 100% Secure Payments',
       benefit2:            '✅ Zero Platform Fee',
@@ -39,7 +39,7 @@ export default function CTASection() {
           </div>
           <div className="relative z-10 flex flex-col gap-3 flex-shrink-0">
             <a href="#" className="bg-brand-orange text-white font-semibold text-base px-10 py-4 rounded-2xl text-center border-2 border-brand-orange hover:bg-brand-orange-dk hover:-translate-y-0.5 hover:shadow-xl hover:shadow-orange-500/30 transition-all duration-200"
-              aria-label="Start your free fundraising campaign on ImpactGuru">
+              aria-label="Start your free fundraising campaign on FundDoo - Together we save lives">
               {b.cta_primary_label || "Start Your Campaign - It's Free →"}
             </a>
             <a href="#campaigns" onClick={(e) => { e.preventDefault(); document.querySelector('#campaigns')?.scrollIntoView({ behavior:'smooth', block:'start' }) }}

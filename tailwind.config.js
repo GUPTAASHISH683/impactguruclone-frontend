@@ -5,14 +5,26 @@ export default {
     extend: {
       colors: {
         brand: {
-          orange: '#FF5722',
-          'orange-dk': '#E64A19',
-          teal: '#00897B',
-          'teal-lt': '#26A69A',
-          dark: '#1A1A2E',
-          dark2: '#16213E',
-          navy: '#0F3460',
-          cream: '#FFF8F0',
+          orange: '#1B9B6C',
+          'orange-dk': '#157A54',
+          teal: '#0F6C4F',
+          'teal-lt': '#34B27B',
+          dark: '#0F1411',
+          dark2: '#141B16',
+          navy: '#1B2A23',
+          cream: '#F5FBF7',
+        },
+        orange: {
+          50: '#F2FBF7',
+          100: '#E3F6EE',
+          200: '#BFEAD8',
+          300: '#94DDBF',
+          400: '#5CC7A0',
+          500: '#1B9B6C',
+          600: '#167F57',
+          700: '#126545',
+          800: '#0F5038',
+          900: '#0C3E2C',
         }
       },
       fontFamily: {
@@ -45,8 +57,8 @@ export default {
         }
       },
       backgroundImage: {
-        'hero-gradient': 'linear-gradient(135deg, #1A1A2E 0%, #16213E 45%, #0F3460 100%)',
-        'cta-gradient':  'linear-gradient(135deg, #1A1A2E 0%, #16213E 100%)',
+        'hero-gradient': 'linear-gradient(135deg, #0F1411 0%, #16261D 45%, #1B3A2B 100%)',
+        'cta-gradient':  'linear-gradient(135deg, #0F1411 0%, #16261D 100%)',
       }
     },
   },

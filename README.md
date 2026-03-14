@@ -1,4 +1,4 @@
-# ImpactGuru - React + Vite PWA Clone
+# FundDoo - React + Vite PWA Clone
 
 A fully static, production-grade crowdfunding homepage built with **React**, **Vite**, **Tailwind CSS v3**, and **PayPal sandbox** integration. Configured as a **Progressive Web App** (PWA) with offline caching.
 
@@ -32,7 +32,7 @@ npm run preview
 ## 📁 Project Structure
 
 ```
-impactguru/
+fundfoo/
 ├── public/
 │   ├── favicon.svg           # Brand favicon
 │   ├── pwa-192.png           # PWA icon 192×192

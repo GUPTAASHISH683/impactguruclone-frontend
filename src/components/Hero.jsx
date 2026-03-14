@@ -61,7 +61,7 @@ export default function Hero() {
   ]
 
   return (
-    <section id="home" aria-label="ImpactGuru - India's crowdfunding platform"
+    <section id="home" aria-label="FundDoo - Together we save lives"
       className="relative min-h-screen bg-hero-gradient flex items-center overflow-hidden pt-16">
       <div aria-hidden="true" className="absolute inset-0 pointer-events-none"
         style={{ backgroundImage: 'radial-gradient(rgba(255,255,255,.07) 1px, transparent 1px)', backgroundSize: '36px 36px' }} />

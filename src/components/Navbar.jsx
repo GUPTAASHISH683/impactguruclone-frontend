@@ -15,7 +15,6 @@ export default function Navbar() {
   const [menuOpen,    setMenuOpen]   = useState(false)
   const [activeHash,  setActiveHash] = useState('')
   const [navLinks,    setNavLinks]   = useState(FALLBACK_LINKS)
-  const [logoText,    setLogoText]   = useState({ primary: 'Impact', accent: 'Guru' })
 
   // Scroll listener
   useEffect(() => {
@@ -40,17 +39,6 @@ export default function Navbar() {
       })
       .catch(() => {/* silently use fallback */})
 
-    endpoints.settings('general')
-      .then((res) => {
-        const g = res.data?.general
-        if (g) {
-          setLogoText({
-            primary: g.logo_primary_text || 'Impact',
-            accent:  g.logo_accent_text  || 'Guru',
-          })
-        }
-      })
-      .catch(() => {})
   }, [])
 
   const handleNav = (e, href) => {
@@ -77,9 +65,10 @@ export default function Navbar() {
         itemType="https://schema.org/SiteNavigationElement"
       >
         <nav className="max-w-7xl mx-auto px-6 h-16 flex items-center gap-6" aria-label="Main navigation" role="navigation">
-          <a href="/" className="font-display text-2xl font-black flex-shrink-0 select-none" aria-label="ImpactGuru - Home" itemProp="url">
-            <span className="text-brand-dark" itemProp="name">{logoText.primary}</span>
-            <span className="text-brand-orange">{logoText.accent}</span>
+          <a href="/" className="font-display text-2xl font-black flex-shrink-0 select-none" aria-label="FundDoo - Together we save lives - Home" itemProp="url">
+            <span className="text-brand-dark" aria-hidden="true">Fund</span>
+            <span className="text-brand-orange" aria-hidden="true">Doo</span>
+            <span className="sr-only" itemProp="name">FundDoo</span>
           </a>
 
           <ul className="hidden md:flex gap-1 ml-auto" role="list">

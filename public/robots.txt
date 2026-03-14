@@ -12,4 +12,4 @@ Disallow: /dist/
 Disallow: /*.json$
 Allow: /manifest.webmanifest
 
-Sitemap: https://www.impactguru.com/sitemap.xml
+Sitemap: https://www.funddoo.com/sitemap.xml

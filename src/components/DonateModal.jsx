@@ -130,7 +130,7 @@ export default function DonateModal({ campaign, onClose }) {
                         amount: { currency_code: 'USD', value: usd },
                       },
                     ],
-                    application_context: { brand_name: 'ImpactGuru Demo', user_action: 'PAY_NOW' },
+                    application_context: { brand_name: 'FundDoo - Together we save lives', user_action: 'PAY_NOW' },
                   })
                 }
                 onApprove={(_data, actions) =>

@@ -27,7 +27,7 @@ export default function App() {
         </main>
         <footer> (Footer)       - role=contentinfo
       */}
-      <main id="main-content" role="main" aria-label="ImpactGuru crowdfunding homepage">
+      <main id="main-content" role="main" aria-label="FundDoo crowdfunding homepage">
         <Hero />
         <CampaignList />
         <HowItWorks />

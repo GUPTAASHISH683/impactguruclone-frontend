@@ -4,10 +4,10 @@ import { endpoints }           from '../api/client'
 import { useScrollReveal }     from '../hooks/useScrollReveal'
 
 const FALLBACK = [
-  { id:1, quote:"ImpactGuru helped us raise ₹18 lakh for my son's kidney transplant in just 3 weeks.", name:'Priya Sharma',  location:'Mumbai, Maharashtra',  initials:'PS', colorClass:'bg-orange-500' },
+  { id:1, quote:"FundDoo helped us raise ₹18 lakh for my son's kidney transplant in just 3 weeks.", name:'Priya Sharma',  location:'Mumbai, Maharashtra',  initials:'PS', colorClass:'bg-orange-500' },
   { id:2, quote:"I started a campaign for my village school's library. Over 400 donors contributed.",  name:'Ramesh Nair',  location:'Kozhikode, Kerala',    initials:'RN', colorClass:'bg-teal-600'   },
-  { id:3, quote:"After the floods in Assam, ImpactGuru's disaster relief campaign reached us within days.", name:'Anjali Das', location:'Guwahati, Assam', initials:'AD', colorClass:'bg-indigo-600' },
-  { id:4, quote:"As a regular donor, I love how transparent ImpactGuru is. I've supported 12 campaigns!", name:'Vikram Patel', location:'Ahmedabad, Gujarat', initials:'VP', colorClass:'bg-purple-600' },
+  { id:3, quote:"After the floods in Assam, FundDoo's disaster relief campaign reached us within days.", name:'Anjali Das', location:'Guwahati, Assam', initials:'AD', colorClass:'bg-indigo-600' },
+  { id:4, quote:"As a regular donor, I love how transparent FundDoo is. I've supported 12 campaigns!", name:'Vikram Patel', location:'Ahmedabad, Gujarat', initials:'VP', colorClass:'bg-purple-600' },
 ]
 
 export default function Testimonials() {
