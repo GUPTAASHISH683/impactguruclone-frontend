@@ -72,7 +72,7 @@ export default function CampaignList() {
             Fundraising Campaigns That Need Your Support
           </h2>
           <p className="text-gray-500 max-w-md mx-auto text-base" itemProp="description">
-            Real people, real emergencies across India. Every donation — no matter how small — changes a life.
+            Real people, real emergencies. Every donation — no matter how small — can change a life.
           </p>
         </header>
 
@@ -86,8 +86,8 @@ export default function CampaignList() {
               aria-label={`Filter by ${f.label}`}
               className={`px-5 py-2 rounded-full text-sm font-semibold border-2 transition-all duration-150 ${
                 filter === f.value
-                  ? 'bg-brand-orange border-brand-orange text-white'
-                  : 'border-gray-200 text-gray-500 hover:border-brand-orange hover:text-brand-orange bg-white'
+                  ? 'bg-brand-primary border-brand-primary text-white'
+                  : 'border-gray-200 text-gray-500 hover:border-brand-primary hover:text-brand-primary bg-white'
               }`}
             >
               {f.label}
@@ -161,7 +161,7 @@ export default function CampaignList() {
                   onClick={() => setPage((p) => Math.max(1, p - 1))}
                   disabled={!meta.hasPrevPage}
                   className="px-5 py-2.5 rounded-xl border-2 border-gray-200 text-gray-500 font-semibold text-sm
-                    hover:border-brand-orange hover:text-brand-orange disabled:opacity-40 disabled:cursor-not-allowed
+                    hover:border-brand-primary hover:text-brand-primary disabled:opacity-40 disabled:cursor-not-allowed
                     transition-all duration-150"
                   aria-label="Previous page"
                 >
@@ -176,8 +176,8 @@ export default function CampaignList() {
                     aria-current={p === page ? 'page' : undefined}
                     className={`w-10 h-10 rounded-xl text-sm font-semibold border-2 transition-all duration-150 ${
                       p === page
-                        ? 'bg-brand-orange border-brand-orange text-white'
-                        : 'border-gray-200 text-gray-500 hover:border-brand-orange hover:text-brand-orange'
+                        ? 'bg-brand-primary border-brand-primary text-white'
+                        : 'border-gray-200 text-gray-500 hover:border-brand-primary hover:text-brand-primary'
                     }`}
                   >
                     {p}
@@ -188,7 +188,7 @@ export default function CampaignList() {
                   onClick={() => setPage((p) => Math.min(meta.totalPages, p + 1))}
                   disabled={!meta.hasNextPage}
                   className="px-5 py-2.5 rounded-xl border-2 border-gray-200 text-gray-500 font-semibold text-sm
-                    hover:border-brand-orange hover:text-brand-orange disabled:opacity-40 disabled:cursor-not-allowed
+                    hover:border-brand-primary hover:text-brand-primary disabled:opacity-40 disabled:cursor-not-allowed
                     transition-all duration-150"
                   aria-label="Next page"
                 >

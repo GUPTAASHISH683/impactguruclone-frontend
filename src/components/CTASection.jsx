@@ -6,7 +6,7 @@ import { useScrollReveal }     from '../hooks/useScrollReveal'
 export default function CTASection() {
   const [section, setSection] = useState({
     heading:    'Start Your Free Crowdfunding Campaign Today',
-    subheading: 'Join 5 lakh+ fundraisers who trust FundDoo. Together we save lives. Zero platform fee for medical campaigns. Funds in your account within days.',
+    subheading: 'Funddoo is a platform that helps people raise funds for medical and personal causes. Together we save lives. Zero platform fee for medical campaigns.',
     blocks: {
       benefit1:            '✅ 100% Secure Payments',
       benefit2:            '✅ Zero Platform Fee',
@@ -29,7 +29,7 @@ export default function CTASection() {
     <section id="start" aria-labelledby="cta-heading" className="py-20 bg-brand-cream" ref={ref}>
       <div className="max-w-7xl mx-auto px-6">
         <div className="reveal bg-cta-gradient rounded-3xl p-12 sm:p-16 flex flex-col lg:flex-row items-center justify-between gap-10 relative overflow-hidden">
-          <div aria-hidden="true" className="absolute -right-20 -top-20 w-72 h-72 bg-brand-orange/10 rounded-full pointer-events-none" />
+          <div aria-hidden="true" className="absolute -right-20 -top-20 w-72 h-72 bg-brand-primary/10 rounded-full pointer-events-none" />
           <div className="relative z-10 max-w-lg">
             <h2 id="cta-heading" className="font-display text-3xl sm:text-4xl font-bold text-white mb-4 leading-tight">{section.heading}</h2>
             <p className="text-white/65 text-base mb-6 leading-relaxed">{section.subheading}</p>
@@ -38,8 +38,8 @@ export default function CTASection() {
             </ul>
           </div>
           <div className="relative z-10 flex flex-col gap-3 flex-shrink-0">
-            <a href="#" className="bg-brand-orange text-white font-semibold text-base px-10 py-4 rounded-2xl text-center border-2 border-brand-orange hover:bg-brand-orange-dk hover:-translate-y-0.5 hover:shadow-xl hover:shadow-orange-500/30 transition-all duration-200"
-              aria-label="Start your free fundraising campaign on FundDoo - Together we save lives">
+            <a href="#" className="bg-brand-primary text-white font-semibold text-base px-10 py-4 rounded-2xl text-center border-2 border-brand-primary hover:bg-brand-primary-dk hover:-translate-y-0.5 hover:shadow-xl hover:shadow-green-500/30 transition-all duration-200"
+              aria-label="Start your free fundraising campaign on Funddoo - Together we save lives">
               {b.cta_primary_label || "Start Your Campaign - It's Free →"}
             </a>
             <a href="#campaigns" onClick={(e) => { e.preventDefault(); document.querySelector('#campaigns')?.scrollIntoView({ behavior:'smooth', block:'start' }) }}

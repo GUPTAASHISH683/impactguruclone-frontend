@@ -114,26 +114,26 @@ export const CAMPAIGNS = [
 ];
 
 export const CATEGORIES = [
-  { id: 'medical',     label: 'Medical',        emoji: '🏥', count: '2,34,000+', bg: 'bg-orange-50',  border: 'border-orange-200' },
-  { id: 'education',   label: 'Education',       emoji: '📚', count: '89,000+',  bg: 'bg-green-50',   border: 'border-green-200'  },
-  { id: 'disaster',    label: 'Disaster Relief', emoji: '🌊', count: '12,000+',  bg: 'bg-blue-50',    border: 'border-blue-200'   },
-  { id: 'animals',     label: 'Animal Welfare',  emoji: '🐾', count: '34,000+',  bg: 'bg-yellow-50',  border: 'border-yellow-200' },
-  { id: 'women',       label: 'Women & Girls',   emoji: '👩', count: '56,000+',  bg: 'bg-pink-50',    border: 'border-pink-200'   },
-  { id: 'environment', label: 'Environment',     emoji: '🌿', count: '18,000+',  bg: 'bg-emerald-50', border: 'border-emerald-200'},
+  { id: 'medical',     label: 'Medical',        emoji: '🏥', count: 'Browse →', bg: 'bg-green-50',  border: 'border-green-200' },
+  { id: 'education',   label: 'Education',       emoji: '📚', count: 'Browse →', bg: 'bg-green-50',   border: 'border-green-200'  },
+  { id: 'disaster',    label: 'Disaster Relief', emoji: '🌊', count: 'Browse →', bg: 'bg-blue-50',    border: 'border-blue-200'   },
+  { id: 'animals',     label: 'Animal Welfare',  emoji: '🐾', count: 'Browse →', bg: 'bg-yellow-50',  border: 'border-yellow-200' },
+  { id: 'women',       label: 'Women & Girls',   emoji: '👩', count: 'Browse →', bg: 'bg-pink-50',    border: 'border-pink-200'   },
+  { id: 'environment', label: 'Environment',     emoji: '🌿', count: 'Browse →', bg: 'bg-emerald-50', border: 'border-emerald-200'},
 ];
 
 export const TESTIMONIALS = [
   {
     id: 1,
-    quote: 'FundDoo helped us raise ₹18 lakh for my son\'s kidney transplant in just 3 weeks. The support from strangers across India gave us hope we never thought was possible.',
+    quote: 'Funddoo made it incredibly easy to share our story. Within days, people from across India were supporting my son\'s treatment. The transparency gave us real hope.',
     name: 'Priya Sharma',
     location: 'Mumbai, Maharashtra',
     initials: 'PS',
-    color: 'bg-orange-500',
+    color: 'bg-green-500',
   },
   {
     id: 2,
-    quote: 'I started a campaign for my village school\'s library. Over 400 donors from across India contributed. The kids now have books they\'ve never dreamed of owning.',
+    quote: 'I started a campaign for my village school on Funddoo. Donors from everywhere helped us build a library the children had always dreamed of owning.',
     name: 'Ramesh Nair',
     location: 'Kozhikode, Kerala',
     initials: 'RN',
@@ -141,7 +141,7 @@ export const TESTIMONIALS = [
   },
   {
     id: 3,
-    quote: 'After the floods in Assam, FundDoo\'s disaster relief campaign reached us within days. The platform truly connects hearts across the country instantly.',
+    quote: 'After the floods in Assam, Funddoo\'s disaster relief campaign connected us with donors instantly. The platform truly brings hearts across the country together.',
     name: 'Anjali Das',
     location: 'Guwahati, Assam',
     initials: 'AD',
@@ -149,7 +149,7 @@ export const TESTIMONIALS = [
   },
   {
     id: 4,
-    quote: 'As a regular donor, I love how transparent FundDoo is. I can see exactly where my money goes and receive real updates. I\'ve supported 12 campaigns this year!',
+    quote: 'As a regular donor, I love how transparent Funddoo is. I can see exactly where my money goes and receive real campaign updates. It builds genuine trust.',
     name: 'Vikram Patel',
     location: 'Ahmedabad, Gujarat',
     initials: 'VP',

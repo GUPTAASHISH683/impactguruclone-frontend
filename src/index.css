@@ -3,7 +3,6 @@
 @tailwind utilities;
 
 /* ===== Local Roboto Fonts ===== */
-
 @font-face {
   font-family: 'Roboto';
   src: url('./assets/fonts/Roboto-Regular.ttf') format('truetype');
@@ -11,7 +10,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: 'Roboto';
   src: url('./assets/fonts/Roboto-Medium.ttf') format('truetype');
@@ -19,7 +17,6 @@
   font-style: normal;
   font-display: swap;
 }
-
 @font-face {
   font-family: 'Roboto';
   src: url('./assets/fonts/Roboto-Bold.ttf') format('truetype');
@@ -31,7 +28,6 @@
 @layer base {
   html {
     scroll-behavior: smooth;
-    /* Improve text rendering for readability (a11y + SEO) */
     -webkit-text-size-adjust: 100%;
     text-size-adjust: 100%;
   }
@@ -44,14 +40,14 @@
   }
   * { box-sizing: border-box; }
 
-  /* Focus visible - critical for keyboard navigation & Lighthouse a11y */
+  /* Keyboard focus indicator — brand green */
   :focus-visible {
     outline: 3px solid #1B9B6C;
     outline-offset: 3px;
     border-radius: 4px;
   }
 
-  /* Reduced motion respect */
+  /* Respect reduced motion */
   @media (prefers-reduced-motion: reduce) {
     *, *::before, *::after {
       animation-duration: 0.01ms !important;
@@ -61,12 +57,8 @@
     html { scroll-behavior: auto; }
   }
 
-  /* Heading hierarchy */
-  h1 { @apply font-display; }
-  h2 { @apply font-display; }
-  h3 { @apply font-display; }
+  h1, h2, h3 { @apply font-display; }
 
-  /* Screen reader only utility */
   .sr-only {
     position: absolute;
     width: 1px; height: 1px;
@@ -87,35 +79,50 @@
 }
 
 @layer components {
+  /* Primary action button — Funddoo brand green */
   .btn-primary {
-    @apply bg-brand-orange text-white font-semibold px-6 py-3 rounded-lg border-2 border-brand-orange
-           transition-all duration-200 hover:bg-brand-orange-dk hover:border-brand-orange-dk
-           hover:-translate-y-0.5 hover:shadow-lg hover:shadow-orange-400/30 active:translate-y-0;
+    @apply bg-brand-primary text-white font-semibold px-6 py-3 rounded-lg border-2 border-brand-primary
+           transition-all duration-200 hover:bg-brand-primary-dk hover:border-brand-primary-dk
+           hover:-translate-y-0.5 hover:shadow-lg active:translate-y-0;
+    box-shadow: none;
   }
+  .btn-primary:hover {
+    box-shadow: 0 10px 25px rgba(27, 155, 108, 0.30);
+  }
+
+  /* Outlined button */
   .btn-outline {
-    @apply bg-transparent text-brand-orange border-2 border-brand-orange font-semibold px-6 py-3 rounded-lg
-           transition-all duration-200 hover:bg-brand-orange hover:text-white;
+    @apply bg-transparent text-brand-primary border-2 border-brand-primary font-semibold px-6 py-3 rounded-lg
+           transition-all duration-200 hover:bg-brand-primary hover:text-white;
   }
+
+  /* Ghost button — for dark backgrounds */
   .btn-ghost {
     @apply bg-transparent text-white border-2 border-white/40 font-semibold px-6 py-3 rounded-lg
            transition-all duration-200 hover:bg-white/10 hover:border-white;
   }
+
+  /* Section pill label */
   .section-tag {
-    @apply inline-block bg-brand-cream text-brand-orange text-xs font-semibold uppercase tracking-widest
-           px-4 py-1.5 rounded-full border border-orange-200 mb-3;
+    @apply inline-block bg-brand-cream text-brand-primary text-xs font-semibold uppercase tracking-widest
+           px-4 py-1.5 rounded-full border border-green-200 mb-3;
   }
+
+  /* Section heading */
   .section-title {
     @apply font-display text-3xl md:text-4xl font-bold text-brand-dark mb-3 leading-tight;
   }
+
+  /* Card hover lift */
   .card-hover {
     @apply transition-all duration-300 hover:-translate-y-1.5 hover:shadow-xl;
   }
 }
 
-/* Progress bar width transition (compositor-safe) */
+/* Progress bar fill transition (compositor-friendly) */
 .progress-fill { transition: width 1s ease; }
 
-/* Scroll reveal — opacity + transform only (no layout thrash) */
+/* Scroll reveal animation */
 .reveal {
   opacity: 0;
   transform: translateY(20px);

@@ -63,7 +63,7 @@ export default function DonateModal({ campaign, onClose }) {
           <div className="bg-hero-gradient p-6 pb-5">
             <div className="flex justify-between items-start">
               <div>
-                <p className="text-orange-300 text-xs font-semibold uppercase tracking-widest mb-1">Donate to campaign</p>
+                <p className="text-green-300 text-xs font-semibold uppercase tracking-widest mb-1">Donate to campaign</p>
                 <h3 className="font-display text-xl font-bold text-white leading-snug">{campaign.title}</h3>
               </div>
               <button
@@ -85,8 +85,8 @@ export default function DonateModal({ campaign, onClose }) {
                   onClick={() => { setSelected(a); setCustom('') }}
                   className={`py-2.5 rounded-xl text-sm font-semibold border-2 transition-all duration-150 ${
                     selected === a && !custom
-                      ? 'border-brand-orange bg-orange-50 text-brand-orange'
-                      : 'border-gray-200 text-gray-700 hover:border-brand-orange hover:text-brand-orange'
+                      ? 'border-brand-primary bg-green-50 text-brand-primary'
+                      : 'border-gray-200 text-gray-700 hover:border-brand-primary hover:text-brand-primary'
                   }`}
                 >
                   {formatINR(a)}
@@ -103,14 +103,14 @@ export default function DonateModal({ campaign, onClose }) {
                 value={custom}
                 onChange={(e) => setCustom(e.target.value)}
                 placeholder="Enter amount"
-                className="w-full px-4 py-2.5 border-2 border-gray-200 rounded-xl text-sm font-medium focus:outline-none focus:border-brand-orange transition-colors"
+                className="w-full px-4 py-2.5 border-2 border-gray-200 rounded-xl text-sm font-medium focus:outline-none focus:border-brand-primary transition-colors"
               />
             </div>
 
             {/* Selected display */}
-            <div className="bg-brand-cream rounded-xl p-3 text-center mb-5 border border-orange-100">
+            <div className="bg-brand-cream rounded-xl p-3 text-center mb-5 border border-green-100">
               <span className="text-sm text-gray-600">Donating: </span>
-              <span className="text-lg font-bold text-brand-orange">{formatINR(amount)}</span>
+              <span className="text-lg font-bold text-brand-primary">{formatINR(amount)}</span>
               <span className="text-xs text-gray-400 ml-2">(≈ ${usd} USD)</span>
             </div>
 
@@ -130,7 +130,7 @@ export default function DonateModal({ campaign, onClose }) {
                         amount: { currency_code: 'USD', value: usd },
                       },
                     ],
-                    application_context: { brand_name: 'FundDoo - Together we save lives', user_action: 'PAY_NOW' },
+                    application_context: { brand_name: 'Funddoo — Together we save lives', user_action: 'PAY_NOW' },
                   })
                 }
                 onApprove={(_data, actions) =>

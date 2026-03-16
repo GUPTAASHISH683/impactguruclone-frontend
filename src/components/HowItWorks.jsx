@@ -12,7 +12,7 @@ const FALLBACK_STEPS = [
 
 export default function HowItWorks() {
   const [steps, setSteps]     = useState(FALLBACK_STEPS)
-  const [section, setSection] = useState({ heading: 'How to Start a Crowdfunding Campaign', subheading: 'From launch to impact in 4 easy steps — no technical skills needed.', tag: 'Simple Process' })
+  const [section, setSection] = useState({ heading: 'How to Start a Crowdfunding Campaign', subheading: 'From launch to impact in 4 easy steps on Funddoo — no technical skills needed.', tag: 'Simple Process' })
   const ref = useScrollReveal()
 
   useEffect(() => {

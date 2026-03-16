@@ -3,17 +3,17 @@ import { useEffect, useState } from 'react'
 import { endpoints }           from '../api/client'
 
 const FALLBACK_BLOCKS = {
-  trust_badge:         '🌟 Trusted by 2M+ donors across India',
-  heading_line1:       "India's #1",
-  heading_line2:       'Crowdfunding Platform',
-  subheading:          'Raise funds for medical emergencies, education, and social causes. Over ₹1,200 Cr raised. Start your campaign free in minutes.',
+  trust_badge:         '🌟 A new platform for people who care',
+  heading_line1:       'Together We',
+  heading_line2:       'Save Lives.',
+  subheading:          'Funddoo is a platform that helps people raise funds for medical and personal causes. Start your campaign free in minutes and make a real difference.',
   cta_primary_label:   'Donate Now',
   cta_primary_href:    '#campaigns',
   cta_secondary_label: 'Start Fundraising →',
   cta_secondary_href:  '#start',
-  stat1_num:           '₹1,200 Cr+', stat1_label: 'Total Raised',
-  stat2_num:           '5,00,000+',  stat2_label: 'Active Campaigns',
-  stat3_num:           '20M+',       stat3_label: 'Lives Impacted',
+  stat1_num:           '₹0 Fee',   stat1_label: 'Medical Campaigns',
+  stat2_num:           '100%',     stat2_label: 'Secure Payments',
+  stat3_num:           '24/7',     stat3_label: 'Fundraising Support',
   float_card1_title:   "Rohan's Cancer Treatment", float_card1_emoji: '👦', float_card1_pct: '72',
   float_card1_bg:      'linear-gradient(135deg,#FF6B6B,#FF8E53)',
   float_card2_title:   'Education for Tribal Kids', float_card2_emoji: '📚', float_card2_pct: '89',
@@ -61,28 +61,28 @@ export default function Hero() {
   ]
 
   return (
-    <section id="home" aria-label="FundDoo - Together we save lives"
+    <section id="home" aria-label="Funddoo - Together we save lives"
       className="relative min-h-screen bg-hero-gradient flex items-center overflow-hidden pt-16">
       <div aria-hidden="true" className="absolute inset-0 pointer-events-none"
         style={{ backgroundImage: 'radial-gradient(rgba(255,255,255,.07) 1px, transparent 1px)', backgroundSize: '36px 36px' }} />
       <div aria-hidden="true" className="absolute inset-0 pointer-events-none"
-        style={{ background: 'radial-gradient(ellipse at 25% 55%, rgba(255,87,34,.13) 0%, transparent 55%)' }} />
+        style={{ background: 'radial-gradient(ellipse at 25% 55%, rgba(27,155,108,.15) 0%, transparent 55%)' }} />
 
       <div className="max-w-7xl mx-auto px-6 w-full flex items-center gap-16 py-20">
         <div className="flex-1 animate-fade-up">
-          <p className="inline-block bg-orange-500/15 border border-orange-400/40 text-orange-300 text-sm font-medium px-5 py-2 rounded-full mb-6 tracking-wide">
+          <p className="inline-block bg-green-500/15 border border-green-400/40 text-green-300 text-sm font-medium px-5 py-2 rounded-full mb-6 tracking-wide">
             {blocks.trust_badge}
           </p>
           <h1 className="font-display text-5xl sm:text-6xl lg:text-7xl font-black text-white leading-[1.08] mb-5">
             {blocks.heading_line1}<br />
-            <span className="text-brand-orange">{blocks.heading_line2}</span>
+            <span className="text-brand-primary">{blocks.heading_line2}</span>
           </h1>
           <p className="text-lg text-white/70 mb-10 max-w-md leading-relaxed">
             {blocks.subheading}
           </p>
           <div className="flex gap-4 flex-wrap mb-14">
             <a href={blocks.cta_primary_href} onClick={(e) => handleScroll(e, blocks.cta_primary_href)}
-              className="bg-white text-brand-orange font-semibold text-base px-8 py-3.5 rounded-xl border-2 border-white transition-all duration-200 hover:bg-brand-cream hover:-translate-y-0.5 hover:shadow-lg"
+              className="bg-white text-brand-primary font-semibold text-base px-8 py-3.5 rounded-xl border-2 border-white transition-all duration-200 hover:bg-brand-cream hover:-translate-y-0.5 hover:shadow-lg"
               aria-label="Donate to a campaign now">
               {blocks.cta_primary_label}
             </a>

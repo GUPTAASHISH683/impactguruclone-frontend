@@ -4,10 +4,10 @@ import { endpoints }            from '../api/client'
 import { useScrollReveal }      from '../hooks/useScrollReveal'
 
 const FALLBACK_FAQS = [
-  { id:1, question:'How do I start a fundraiser on FundDoo?',       answer:'Starting a fundraiser is free and takes under 10 minutes. Fill in your story, upload a photo, set your goal amount, and launch.' },
-  { id:2, question:'Is there a platform fee for medical crowdfunding?', answer:'FundDoo charges zero platform fee for medical campaigns. A small payment processing fee (2-3%) applies.' },
+  { id:1, question:'How do I start a fundraiser on Funddoo?',         answer:'Starting a fundraiser is free and takes under 10 minutes. Fill in your story, upload a photo, set your goal amount, and launch.' },
+  { id:2, question:'Is there a platform fee for medical crowdfunding?', answer:'Funddoo charges zero platform fee for medical campaigns. A small payment processing fee (2-3%) applies.' },
   { id:3, question:'How quickly will I receive the donated funds?',     answer:'Funds are transferred to your verified bank account within 5-7 working days.' },
-  { id:4, question:'Is donating on FundDoo safe and secure?',       answer:'Yes. We use 256-bit SSL encryption and partner with RBI-compliant payment gateways.' },
+  { id:4, question:'Is donating on Funddoo safe and secure?',           answer:'Yes. We use 256-bit SSL encryption and partner with RBI-compliant payment gateways.' },
 ]
 
 function AccordionItem({ faq, index, isOpen, onToggle }) {
@@ -17,7 +17,7 @@ function AccordionItem({ faq, index, isOpen, onToggle }) {
       <button id={`${id}-btn`} aria-expanded={isOpen} aria-controls={`${id}-panel`} onClick={onToggle}
         className="w-full flex items-center justify-between px-6 py-5 text-left bg-white hover:bg-gray-50 transition-colors duration-150 gap-4">
         <h3 className="font-semibold text-brand-dark text-sm sm:text-base leading-snug" itemProp="name">{faq.question}</h3>
-        <span aria-hidden="true" className={`text-brand-orange text-xl flex-shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-45' : ''}`}>+</span>
+        <span aria-hidden="true" className={`text-brand-primary text-xl flex-shrink-0 transition-transform duration-300 ${isOpen ? 'rotate-45' : ''}`}>+</span>
       </button>
       <div id={`${id}-panel`} role="region" aria-labelledby={`${id}-btn`}
         itemScope itemProp="acceptedAnswer" itemType="https://schema.org/Answer"
@@ -30,7 +30,7 @@ function AccordionItem({ faq, index, isOpen, onToggle }) {
 
 export default function FAQ() {
   const [faqs,      setFaqs]      = useState(FALLBACK_FAQS)
-  const [section,   setSection]   = useState({ heading: 'Frequently Asked Questions', subheading: 'Everything you need to know about crowdfunding on FundDoo. Together we save lives.', tag: 'Got Questions?' })
+  const [section,   setSection]   = useState({ heading: 'Frequently Asked Questions', subheading: 'Everything you need to know about crowdfunding on Funddoo. Together we save lives.', tag: 'Got Questions?' })
   const [openIndex, setOpenIndex] = useState(0)
   const ref = useScrollReveal()
 

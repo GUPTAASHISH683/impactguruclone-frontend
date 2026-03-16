@@ -54,7 +54,7 @@ export default function CampaignCard({ campaign, delay = 0, headingLevel = 3 }) 
           aria-hidden="true"
         >
           <span role="img" aria-label={`${campaign.title} campaign image`}>{campaign.emoji}</span>
-          <span className="absolute top-3 left-3 bg-brand-orange text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full">
+          <span className="absolute top-3 left-3 bg-brand-primary text-white text-[10px] font-bold uppercase tracking-wider px-2.5 py-1 rounded-full">
             {campaign.label}
           </span>
           {campaign.urgent && (
