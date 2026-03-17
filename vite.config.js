@@ -26,7 +26,7 @@ export default defineConfig({
       },
     }),
   ],
-  // ─── Dev proxy: forward /api requests to Express backend ───────────────
+  // ─── Dev proxy: forward /api requests to Express backend ──────────────
   server: {
     port: 5173,
     proxy: {
